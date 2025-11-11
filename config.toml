@@ -1,7 +1,15 @@
-BaseUrl= "http://netbrain.github.io/"
+BaseUrl= "https://netbrain.github.io"
 LanguageCode= "en"
 Title= "Kim Eik"
-paginate = 5
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 #DisqusShortname = "netbrain"
 Copyright = "All rights reserved - 2015"
 canonifyurls = true
