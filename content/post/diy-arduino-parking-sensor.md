@@ -3,18 +3,19 @@ categories = ["arduino"]
 date = "2015-09-02T11:28:31+02:00"
 tags = ["arduino", "sensor", "DIY", "IoT"]
 title = "DIY Arduino parking sensor"
+summary = "Building a cheap and accurate parking assistant using Arduino Nano and an ultrasonic sensor."
 image = "/images/post/arduino-psens.jpg"
 +++
 
 I recently created a workbench in the far end of my garage. This however resulted in about 10 cm of clearance in total in front and behind the car. So needless to say it would be great if I had my own personal parking assistant.
 
-So I set out with the goal of creating a simple parking assistant, which had to be cheap, small and accurate.I then browsed http://www.dx.com for the parts i needed and landed on the following pieces:
+So I set out with the goal of creating a simple parking assistant, which had to be cheap, small and accurate. I then browsed http://www.dx.com for the parts I needed and landed on the following pieces:
 
 1. Arduino nano v3
 2. HC-SR04 (Ultrasonic distance sensor)
 3. Starter kit (breadbord, resistors, cables, LED's, etc.)
 
-I read a couple of tutorials and started piecing the parts together. It was actually quite simple, and i found the whole experience to be quite enjoyable. The following breadboard describes how I assembled the parts & circuits.
+I read a couple of tutorials and started piecing the parts together. It was actually quite simple, and I found the whole experience to be quite enjoyable. The following breadboard diagram shows how I assembled the parts & circuits.
 
 [![breadboard](/images/post/psens_bb.png)](/images/post/psens_bb.png)
 
@@ -28,8 +29,8 @@ As for programming the chip I really wanted to use the [gobot](http://www.gobot.
 #define G_LED 4             // green led pin
 #define ECHO_PIN     11     // HC-SR04 echo pin
 #define TRIGGER_PIN  12     // HC-SR04 trigger pin
-#define MAX_DISTANCE 500    // max distance to mesture
-#define DELAY 10            // nanoseconds between distance pings
+#define MAX_DISTANCE 500    // max distance to measure
+#define DELAY 10            // milliseconds between distance pings
 
 
 //The history struct keeps track of previous distances measured
